@@ -1,19 +1,26 @@
 import { Mail } from "lucide-react";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="grid m-auto grid-cols-2 items-center px-10 py-8 justify-between text-md">
-      <div className="flex gap-x-4">
-        <Mail />
-        <p>diarifiana@gmail.com</p>
-      </div>
+    <div className="grid m-auto grid-cols-2 items-center px-10 py-3 justify-between text-md text-[15px]">
+      <a href="#contact-section">
+        <Button className="flex gap-x-4 justify-start" variant="link">
+          <Mail />
+          <p>diarifiana@gmail.com</p>
+        </Button>
+      </a>
 
-      <div className="grid grid-cols-2 justify-items-end">
-        <div></div>
-        <div className="flex gap-8">
-        <button>about</button>
-        <button>contact</button>
-        </div>
+      <div className="flex justify-end">
+        <a href="#about-section">
+          <Button variant="link">About</Button>
+        </a>
+        <a href="#port-section">
+          <Button variant="link">Portfolio</Button>
+        </a>
+        <a href="#contact-section">
+          <Button variant="link">Contact</Button>{" "}
+        </a>
       </div>
     </div>
   );
