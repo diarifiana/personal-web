@@ -141,24 +141,31 @@ const Contact = () => {
           Connect with me!
         </p>
         <div className="grid grid-cols-3 items-center m-auto">
-          <Button
-            className="w-[150px] justify-self-end text-white"
-            variant="link"
-          >
-            Linkedin
-          </Button>
-          <Button
-            className="w-[150px] justify-self-end text-white"
-            variant="link"
-          >
-            Instagram
-          </Button>
-          <Button
-            className="w-[150px] justify-self-end text-white"
-            variant="link"
-          >
-            Github
-          </Button>
+          <a href="https://www.linkedin.com/in/diarifiana/">
+            <Button
+              className="w-[150px] justify-self-end text-white"
+              variant="link"
+            >
+              Linkedin
+            </Button>
+          </a>
+
+          <a href="https://www.instagram.com/diarifiana/">
+            <Button
+              className="w-[150px] justify-self-end text-white"
+              variant="link"
+            >
+              Instagram
+            </Button>
+          </a>
+          <a href="https://github.com/diarifiana">
+            <Button
+              className="w-[150px] justify-self-end text-white"
+              variant="link"
+            >
+              Github
+            </Button>
+          </a>
         </div>
       </div>
     </section>

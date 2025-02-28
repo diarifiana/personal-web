@@ -2,7 +2,7 @@
 
 import { Mail } from "lucide-react";
 import { Button } from "./ui/button";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/src/utils/google-analytics";
 
 const Navbar = () => {
   return (
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="flex justify-end">
         <a href="#about-section">
           <Button variant="link">About</Button>
-          <Button variant="link" onClick={() => sendGAEvent("connect to GA", "inspect the click", "personal web")}>Test GA Event</Button>
+          {/* <Button variant="link" onClick={() => sendGAEvent("connect to GA", "inspect the click", "personal web")}>Test GA Event</Button> */}
         </a>
         <a href="#port-section">
           <Button variant="link">Portfolio</Button>
