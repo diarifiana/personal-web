@@ -1,3 +1,5 @@
+"use client"
+
 import { Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import { sendGAEvent } from "@next/third-parties/google";
