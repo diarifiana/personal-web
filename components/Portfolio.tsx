@@ -135,7 +135,7 @@ const Portfolio = () => {
               <p className="font-semibold">Personal Blog</p>
             </div>
             <p className="px-3">
-              I've been reflecting on my learning journey lately, and I've
+              Ive been reflecting on my learning journey lately, and Ive
               shared fresh thoughts on the blog
             </p>
           </div>

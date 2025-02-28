@@ -71,7 +71,7 @@ const Hero = () => {
         </Avatar>
 
         <div className="space-y-3 text-center">
-          <p className={`mt-5 ${subHeadingTextSize}`}>Hi! I'm Diah</p>
+          <p className={`mt-5 ${subHeadingTextSize}`}>Hi! Im Diah</p>
           <h1 className={headingTextSize}>
             Web Developer
             <br />

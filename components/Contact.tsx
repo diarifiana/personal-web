@@ -95,7 +95,7 @@ const Contact = () => {
         <p className={`text-center ${headingTextColor} text-lg pb-8`}>
           Have an idea?
           <br />
-          <span className={headingTextColor}>Let's talk about it!</span>
+          <span className={headingTextColor}>Lets talk about it!</span>
         </p>
 
         <form className="max-w-sm mx-auto">
