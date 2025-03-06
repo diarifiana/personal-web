@@ -1,14 +1,18 @@
+import Image from "next/image";
 import React from "react";
 
 const Hero = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-        <img
-          className="w-[200px] h-[200px] rounded-full m-auto p-4"
-          src="/avatar.jpg"
-          alt="Rounded avatar"
-        />
+        <div className="relative w-[200px] h-[200px] m-auto">
+          <Image
+            src="/avatar.jpg"
+            alt="Rounded avatar"
+            className="rounded-full p-4"
+            fill
+          />
+        </div>
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
           Diah Safitri
         </h1>
@@ -38,7 +42,7 @@ const Hero = () => {
                 stroke="currentColor"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                stroke-width="2"
+                strokeWidth="2"
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>

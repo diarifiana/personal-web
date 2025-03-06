@@ -1,9 +1,7 @@
-import React from "react";
 
 const Aboutme = () => {
   const sectionPadding = "px-8 py-12 md:px-24";
   const paragraphMarginSmall = "mt-2";
-  const paragraphMarginLarge = "mt-8";
   const headingText = "Why I learn web development?";
   const firstParagraphText =
     "I'm driven by the desire to build functional and aesthetically pleasing digital experiences that solve real-world problems. The constant evolution of web technologies presents an exciting challenge, fueling my passion for continuous learning. I believe to empower individuals and businesses to be a part of shaping that digital landscape.";

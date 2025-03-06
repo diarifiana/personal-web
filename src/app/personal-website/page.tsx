@@ -32,7 +32,7 @@ const PersonalWebsitePage = () => {
         For the front-end development, I utilized Next.js, Tailwind CSS, and
         JavaScript. I implemented a component based design, to make the site
         easy to update in the future. The site is deployed using Vercel, to take
-        advantage of it's easy to use deployment features.
+        advantage of it&apos;ss easy to use deployment features.
       </p>
       <br />
       The website successfully provides a professional online presence,

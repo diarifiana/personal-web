@@ -54,7 +54,7 @@ const Portfolio = () => {
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
-              stroke-width="2"
+              strokeWidth="2"
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>

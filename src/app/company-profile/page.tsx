@@ -25,7 +25,7 @@ const CompanyProfilePage = () => {
           descriptions
         </li>
         <li>
-          3. Develop a section for the company's story, values, and
+          3. Develop a section for the company&apos;ss story, values, and
           craftsmanship
         </li>
         <li>
@@ -38,7 +38,7 @@ const CompanyProfilePage = () => {
         For the development, I utilized Next.js, Tailwind CSS, and JavaScript.
         Gathering high-quality images of their jewelry and craft compelling
         descriptions. The site is deployed using Vercel, to take advantage of
-        it's easy to use deployment features.
+        it&apos;ss easy to use deployment features.
       </p>
       <br />
       Through this project, I learned how to translate a physical brand into a
