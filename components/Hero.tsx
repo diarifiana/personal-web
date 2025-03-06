@@ -1,98 +1,55 @@
-// import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-// import { Button } from "./ui/button";
-// import { Download } from "lucide-react";
-
-// const Hero = () => {
-//   return (
-//     <div className="grid grid-rows-[auto_1fr] justify-items-center">
-//       <div className="grid pb-10 pt-5 justify-items-center">
-//         <Avatar className="w-[200px] h-[200px]">
-//           <AvatarImage
-//             className="object-fit: fill"
-//             src="https://images.unsplash.com/photo-1612392549296-c7623f23665a?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-//             alt="avatar"
-//           />
-//           <AvatarFallback>CN</AvatarFallback>
-//         </Avatar>
-
-//         <div className="space-y-3 text-center">
-//           <p className="mt-5 text-[20px]">Hi! I'm Diah</p>
-//           <p className="text-[42px]">
-//             Web Developer
-//             <br />
-//             based in Indonesia
-//           </p>
-//           <p className="text-[16px] text-[#5F5F5F]">
-//              A passion-driven team-player creating an engaging functional web
-//             <br />
-//             experiences and constantly seeking opportunities to innovate
-//           </p>
-//         </div>
-//       </div>
-
-//       <div className="flex h-full gap-5">
-//         <Button className="w-[130px] rounded-[30px] text-[12px]">
-//           Contact Me
-//         </Button>
-//         <Button className="w-[130px] text-[12px]" variant="link">
-//           Download CV
-//           <Download />
-//         </Button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Hero;
-
 import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "./ui/button";
-import { Download } from "lucide-react";
 
 const Hero = () => {
-  const avatarSize = "w-[200px] h-[200px]";
-  const headingTextSize = "text-[42px]";
-  const subHeadingTextSize = "text-[20px]";
-  const paragraphTextSize = "text-[16px] text-[#5F5F5F]";
-  const buttonWidth = "w-[130px]";
-  const buttonContactStyle = "rounded-[30px] text-[12px]";
-  const buttonDownloadStyle = "text-[12px]";
-
   return (
-    <section className="grid grid-rows-[auto_1fr] justify-items-center">
-      <div className="grid pb-10 pt-5 justify-items-center">
-        <Avatar className={avatarSize}>
-          <AvatarImage
-            src="https://images.unsplash.com/photo-1612392549296-c7623f23665a?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Diah's Avatar"
-          />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
-
-        <div className="space-y-3 text-center">
-          <p className={`mt-5 ${subHeadingTextSize}`}>Hi! Im Diah</p>
-          <h1 className={headingTextSize}>
-            Web Developer
-            <br />
-            based in Indonesia
-          </h1>
-          <p className={paragraphTextSize}>
-            A passion-driven team-player creating an engaging functional web
-            <br />
-            experiences and constantly seeking opportunities to innovate
-          </p>
+    <section className="bg-white dark:bg-gray-900">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+        <img
+          className="w-[200px] h-[200px] rounded-full m-auto p-4"
+          src="/avatar.jpg"
+          alt="Rounded avatar"
+        />
+        <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          Diah Safitri
+        </h1>
+        <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-400">
+          Full-Stack Web Developer
+          <br />
+          <br />
+          Creating an easy-to-use websites that work well on all devices. My
+          skills include building websites with HTML, CSS, and JavaScript, as
+          well as handling the server-side with tools like Node.js and React
+        </p>
+        <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+          <a
+            href="https://drive.google.com/file/d/1IY4yCRhtS1PNSEHO9Id2v0H6sVf1y3Wj/view"
+            target="_blank"
+            className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-black hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+          >
+            Download CV
+            <svg
+              className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </a>
+          <a
+            href="#contact-section"
+            className="py-3 px-5 sm:ms-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+          >
+            Contact Me
+          </a>
         </div>
-      </div>
-
-      <div className="flex h-full gap-5">
-        <Button className={`${buttonWidth} ${buttonContactStyle}`}>
-          Contact Me
-        </Button>
-        <Button className={`${buttonWidth} ${buttonDownloadStyle}`} variant="link">
-          Download CV
-          <Download />
-        </Button>
       </div>
     </section>
   );

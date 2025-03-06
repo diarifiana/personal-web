@@ -1,86 +1,8 @@
-// import Image from "next/image";
-// import { Button } from "./ui/button";
-
-// const Skill = () => {
-//   return (
-//     <div className="grid grid-row-2 ">
-//       <div className="m-auto mb-8">
-//         <p className="text-3xl font-semibold">Programming skills</p>
-//       </div>
-
-//       <div className="grid grid-cols-3 gap-5 h-[500px]">
-//         <div className="rounded-lg text-black text-center justify-center items-center m-auto">
-//         <Image
-//             src="/html.png"
-//             alt="html"
-//             width={100}
-//             height={100}
-//           />
-//           <p className="mt-2">HTML</p> 
-//         </div>
-
-//         <div className="rounded-lg text-black text-center justify-center items-center m-auto">
-//         <Image
-//             src="/css.png"
-//             alt="css"
-//             width={100}
-//             height={100}
-//           />
-//           <p className="mt-2">CSS</p> 
-//         </div>
-
-//         <div className="rounded-lg text-black text-center justify-center items-center m-auto">
-//         <Image
-//             src="/js.png"
-//             alt="js"
-//             width={100}
-//             height={100}
-//           />
-//           <p className="mt-2">Javascript</p> 
-//         </div>
-
-//         <div className="rounded-lg text-black text-center justify-center items-center m-auto">
-//         <Image
-//             src="/git.png"
-//             alt="git"
-//             width={100}
-//             height={100}
-//           />
-//           <p className="mt-2">GIT</p> 
-//         </div>
-
-//         <div className="rounded-lg text-black text-center justify-center items-center m-auto">
-//         <Image
-//             src="/react.png"
-//             alt="react"
-//             width={100}
-//             height={100}
-//           />
-//           <p className="mt-2">React</p> 
-//         </div>
-
-//         <div className="rounded-lg text-black text-center justify-center items-center m-auto">
-//         <Image
-//             src="/nodes.png"
-//             alt="nodejs"
-//             width={100}
-//             height={100}
-//           />
-//           <p className="mt-2">Node.js</p> 
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Skill;
-
 import React from "react";
 import Image from "next/image";
 
 const Skill = () => {
-  const sectionGridStyle = "grid grid-row-2";
+  const sectionGridStyle = "grid grid-row-2 px-8";
   const titleStyle = "m-auto mb-8";
   const headingStyle = "text-3xl font-semibold";
   const skillsGridStyle = "grid grid-cols-3 gap-5 h-[500px]";

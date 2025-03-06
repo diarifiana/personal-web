@@ -1,171 +1,66 @@
-// import { Button } from "./ui/button";
-
-// const Contact = () => {
-//   return (
-//     <div className="grid grid-cols-2 bg-black py-12">
-//       <div>
-//         <p className="text-center text-white text-lg pb-8">
-//           Have an idea?
-//           <br />
-//           <span className="text-white">Let's talk about it!</span>
-//         </p>
-
-//         <form className="max-w-sm mx-auto">
-//           <div className="mb-5">
-//             <label className="block mb-2 text-sm font-medium text-white">
-//               Your email
-//             </label>
-//             <input
-//               type="email"
-//               id="email"
-//               className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-//               placeholder="yourname@mail.com"
-//               required
-//             />
-//           </div>
-//           <div className="mb-5">
-//             <label className="block mb-2 text-sm font-medium text-white dark:text-white">
-//               Message
-//             </label>
-//             <input
-//               type="password"
-//               id="password"
-//               className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-//               required
-//             />
-//           </div>
-//           <button
-//             type="submit"
-//             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-//           >
-//             Send Message
-//           </button>
-//         </form>
-//       </div>
-
-//       <div>
-//         <p className="text-center text-white pb-12">Connect with me!</p>
-//         <div className="grid grid-cols-3 items-center m-auto">
-//           <Button
-//             className="w-[150px] justify-self-end text-white"
-//             variant="link"
-//           >
-//             Linkedin
-//           </Button>
-
-//           <Button
-//             className="w-[150px] justify-self-end text-white"
-//             variant="link"
-//           >
-//             Instagram
-//           </Button>
-
-//           <Button
-//             className="w-[150px] justify-self-end text-white"
-//             variant="link"
-//           >
-//             Github
-//           </Button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
-import React from "react";
+import SendEmail from "./SendEmail";
 import { Button } from "./ui/button";
 
 const Contact = () => {
   const sectionBgColor = "bg-black";
   const sectionPadding = "py-12";
   const headingTextColor = "text-white";
-  const inputTextColor = "text-white";
-  const inputFocusColor = "focus:ring-blue-500 focus:border-blue-500";
-  const buttonSubmitColor =
-    "bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300";
 
   return (
     <section
       id="contact-section"
-      className={`grid grid-cols-2 ${sectionBgColor} ${sectionPadding}`}
+      className={` ${sectionBgColor} ${sectionPadding}`}
     >
-      <div>
-        <p className={`text-center ${headingTextColor} text-lg pb-8`}>
-          Have an idea?
-          <br />
-          <span className={headingTextColor}>Lets talk about it!</span>
-        </p>
-
-        <form className="max-w-sm mx-auto">
-          <div className="mb-5">
-            <label
-              htmlFor="email"
-              className={`block mb-2 text-sm font-medium ${headingTextColor}`}
+      <div className="md:grid md:grid-cols-2 px-4 md:px-0">
+        {" "}
+        {/* Responsive grid */}
+        <div className="sm:mb-4 md:mb-0">
+          {" "}
+          {/* Add margin bottom for mobile */}
+          <p className={`text-center ${headingTextColor} text-lg pb-2`}>
+            Have an idea?
+            <br />
+            <span className={headingTextColor}>Lets talk about it!</span>
+          </p>
+          <SendEmail />
+        </div>
+        <div className="md:pr-12 mt-8 md:mt-0">
+          {" "}
+          {/* Add margin top for mobile */}
+          <p className={`text-center ${headingTextColor} pb-8 md:pb-12`}>
+            Connect with me!
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center m-auto justify-items-center">
+            {" "}
+            {/* Adjust grid */}
+            <a
+              href="https://www.linkedin.com/in/diarifiana/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Your email
-            </label>
-            <input
-              type="email"
-              id="email"
-              className={`bg-gray-50 border border-gray-300 ${inputTextColor} text-sm rounded-lg ${inputFocusColor} block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-              placeholder="yourname@mail.com"
-              required
-            />
+              <Button className="w-full md:w-[150px] text-white" variant="link">
+                Linkedin
+              </Button>
+            </a>
+            <a
+              href="https://www.instagram.com/diarifiana/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="w-full md:w-[150px] text-white" variant="link">
+                Instagram
+              </Button>
+            </a>
+            <a
+              href="https://github.com/diarifiana"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="w-full md:w-[150px] text-white" variant="link">
+                Github
+              </Button>
+            </a>
           </div>
-          <div className="mb-5">
-            <label
-              htmlFor="message"
-              className={`block mb-2 text-sm font-medium ${headingTextColor}`}
-            >
-              Message
-            </label>
-            <textarea
-              id="message"
-              className={`bg-gray-50 border border-gray-300 ${inputTextColor} text-sm rounded-lg ${inputFocusColor} block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-              required
-            />
-          </div>
-          <Button
-            type="submit"
-            className={`text-white ${buttonSubmitColor} font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800`}
-          >
-            Send Message
-          </Button>
-        </form>
-      </div>
-
-      <div className="pr-12">
-        <p className={`text-center ${headingTextColor} pb-12`}>
-          Connect with me!
-        </p>
-        <div className="grid grid-cols-3 items-center m-auto">
-          <a href="https://www.linkedin.com/in/diarifiana/">
-            <Button
-              className="w-[150px] justify-self-end text-white"
-              variant="link"
-            >
-              Linkedin
-            </Button>
-          </a>
-
-          <a href="https://www.instagram.com/diarifiana/">
-            <Button
-              className="w-[150px] justify-self-end text-white"
-              variant="link"
-            >
-              Instagram
-            </Button>
-          </a>
-          <a href="https://github.com/diarifiana">
-            <Button
-              className="w-[150px] justify-self-end text-white"
-              variant="link"
-            >
-              Github
-            </Button>
-          </a>
         </div>
       </div>
     </section>

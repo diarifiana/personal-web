@@ -1,77 +1,22 @@
-// import { Button } from "./ui/button";
-
-// const Testimonials = () => {
-//   return (
-//     <div>
-//       <div className="text-center py-12">
-//         <p className="text-3xl font-semibold">Testimonials</p>
-//       </div>
-
-//       <div className="grid grid-cols-2 px-12 text-center">
-//         {/* testimonial 1 */}
-//         <div className="px-4">
-//           <h1 className="pb-4">
-//             <span className="font-semibold">Jane, </span>Marketing Manager
-//           </h1>
-//           <p className="italic">
-//             "I was incredibly impressed with the level of support I received.
-//             She went above and beyond to resolve my issue. I'll definitely be a
-//             returning customer."
-//           </p>
-//           <Button
-//             className="w-[150px] justify-self-end font-semibold pt-8"
-//             variant="link"
-//           >
-//             Read more
-//           </Button>
-//         </div>
-
-//         {/* testimonial 2 */}
-//         <div className="px-4">
-//           <h1 className="pb-4">
-//             <span className="font-semibold">Brian, </span>Senior Developer
-//           </h1>
-//           <p className="italic pb-6">
-//             "The platform was very user friendly. I was able to navigate it
-//             easily and find what I needed."
-//           </p>
-//           <Button
-//             className="w-[150px] justify-self-end font-semibold pt-8 mb-24"
-//             variant="link"
-//           >
-//             Read more
-//           </Button>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Testimonials;
-
-
-import React from "react";
-import { Button } from "./ui/button";
-
 const Testimonials = () => {
   const sectionPadding = "py-12";
   const headingStyle = "text-3xl font-semibold";
-  const testimonialsGridStyle = "grid grid-cols-2 px-12 text-center";
   const testimonialItemStyle = "px-4";
-  const testimonialAuthorStyle = "pb-4";
+  const testimonialAuthorStyle = "pb-4 pt-4";
   const testimonialQuoteStyle = "italic";
-  const readMoreButtonStyle = "justify-self-end pt-8 pb-28";
 
   const testimonials = [
     {
-      author: "Jane, Marketing Manager",
+      author: "Susie, Business Owner",
       quote:
         "I was incredibly impressed with the level of support I received. She went above and beyond to resolve my issue. I'll definitely be a returning customer.",
+      image: "/susie.jpg",
     },
     {
-      author: "Brian, Senior Developer",
+      author: "Carlos, Senior Developer",
       quote:
         "The platform was very user friendly. I was able to navigate it easily and find what I needed.",
+      image: "/carlos.png",
     },
   ];
 
@@ -81,9 +26,16 @@ const Testimonials = () => {
         <p className={headingStyle}>Testimonials</p>
       </div>
 
-      <div className={testimonialsGridStyle}>
+      <div className="grid gap-8 md:grid-cols-2 px-4 pb-8 md:px-12 text-center">
+        {" "}
+        {/* Responsive grid */}
         {testimonials.map((testimonial, index) => (
           <div key={index} className={testimonialItemStyle}>
+            <img
+              className="w-[80px] h-[80px] rounded-full m-auto object-cover"
+              src={testimonial.image}
+              alt="Rounded avatar"
+            />
             <h1 className={testimonialAuthorStyle}>
               <span className="font-semibold">
                 {testimonial.author.split(",")[0]},
@@ -93,9 +45,6 @@ const Testimonials = () => {
             <blockquote className={testimonialQuoteStyle}>
               {testimonial.quote}
             </blockquote>
-            <Button className={readMoreButtonStyle} variant="link">
-              Read more
-            </Button>
           </div>
         ))}
       </div>
