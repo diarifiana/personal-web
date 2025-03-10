@@ -1,9 +1,13 @@
+import Link from "next/link";
+
 const CompanyProfilePage = () => {
   return (
     <div className="p-8 text-justify">
-      <h1 className="pb-8 text-center font-bold text-3xl">
-        Local Jewelry Company Profile Website
-      </h1>
+      <Link href="https://company-profile-gilt.vercel.app/">
+        <h1 className="pb-8 text-center font-bold text-3xl hover:underline hover:text-blue-200">
+          Local Jewelry Company Profile Website
+        </h1>
+      </Link>
       <p>
         This project involved designing and developing a company profile website
         for a local jewelry business. The goal was to create an engaging and

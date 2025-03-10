@@ -26,7 +26,6 @@ const Portfolio = () => {
   const showPortfolio = portfolio.map((data) => {
     return (
       <div
-        id="portfolio-section"
         key={data.id}
         className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
       >
@@ -63,7 +62,7 @@ const Portfolio = () => {
     );
   });
   return (
-    <div>
+    <div id="portfolio-section" className="md: py-12">
       <h2 className="text-center font-bold text-3xl p-8">Portfolio</h2>
       <div className="flex flex-wrap md:grid grid-cols-3 gap-4 px-12">
         {showPortfolio}

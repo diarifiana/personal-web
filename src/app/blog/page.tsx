@@ -1,10 +1,15 @@
+import Link from "next/link";
 import React from "react";
 
 const BlogPage = () => {
   return (
     <div>
       <div className="p-8 text-justify">
-        <h1 className="pb-8 text-center font-bold text-3xl">Formula 1 Fan Blog</h1>
+        <Link href="https://blog-challenge-theta.vercel.app/">
+          <h1 className="pb-8 text-center font-bold text-3xl hover:underline">
+            Formula 1 Fan Blog
+          </h1>
+        </Link>
         <p>
           This project involved the collaborative creation of a blog dedicated
           to Formula 1. The blog aims to provide in-depth analysis, news, and

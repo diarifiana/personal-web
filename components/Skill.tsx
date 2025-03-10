@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Skill = () => {
-  const sectionGridStyle = "grid grid-row-2 px-8";
+  const sectionGridStyle = "grid grid-row-2 px-8 md:py-12";
   const titleStyle = "m-auto mb-8";
   const headingStyle = "text-3xl font-semibold";
   const skillsGridStyle = "grid grid-cols-3 gap-5 h-[500px]";

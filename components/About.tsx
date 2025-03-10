@@ -1,4 +1,3 @@
-
 const Aboutme = () => {
   const sectionPadding = "px-8 py-12 md:px-24";
   const paragraphMarginSmall = "mt-2";
@@ -10,14 +9,16 @@ const Aboutme = () => {
 
   return (
     <section id="about-section" className={`${sectionPadding} text-justify`}>
-      <h1 className="font-bold">{headingText}</h1>
-      <p className={`${paragraphMarginSmall} space-x-2 text-gray-500`}>
-        {firstParagraphText}
-      </p>
-      <br />
-      <p className={`{paragraphMarginLarge} text-gray-500`}>
-        {secondParagraphText}
-      </p>
+      <div className="py-4">
+        <h1 className="font-bold">{headingText}</h1>
+        <p className={`${paragraphMarginSmall} space-x-2 text-gray-500`}>
+          {firstParagraphText}
+        </p>
+        <br />
+        <p className={`{paragraphMarginLarge} text-gray-500`}>
+          {secondParagraphText}
+        </p>
+      </div>
     </section>
   );
 };
