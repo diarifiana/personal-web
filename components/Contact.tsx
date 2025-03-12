@@ -7,10 +7,7 @@ const Contact = () => {
   const headingTextColor = "text-white";
 
   return (
-    <section
-      id="contact-section"
-      className={` ${sectionBgColor} ${sectionPadding}`}
-    >
+    <section id="contact" className={` ${sectionBgColor} ${sectionPadding}`}>
       <div className="md:grid md:grid-cols-2 px-4 md:px-0">
         {" "}
         {/* Responsive grid */}

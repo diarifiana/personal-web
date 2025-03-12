@@ -8,14 +8,14 @@ import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
-    <div className="montserrat">
+    <div className="montserrat mx-auto max-w-screen-xl">
       <Hero />
       <Aboutme />
       <Skill />
       <Portfolio />
       <Experience />
       <Testimonials />
-      <Contact/>
+      <Contact />
     </div>
   );
 }

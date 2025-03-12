@@ -62,7 +62,7 @@ const Portfolio = () => {
     );
   });
   return (
-    <div id="portfolio-section" className="md: py-12">
+    <div id="portfolio" className="md: py-12">
       <h2 className="text-center font-bold text-3xl p-8">Portfolio</h2>
       <div className="flex flex-wrap md:grid grid-cols-3 gap-4 px-12">
         {showPortfolio}

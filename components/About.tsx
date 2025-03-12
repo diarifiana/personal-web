@@ -8,7 +8,7 @@ const Aboutme = () => {
     "Focusing on creating impactful digital experiences, my core skills include HTML, CSS, JavaScript, React, and Node.js. I value collaboration, attention to detail, integrity and strive to deliver high-quality, efficient solutions for clients.";
 
   return (
-    <section id="about-section" className={`${sectionPadding} text-justify`}>
+    <section id="about" className={`${sectionPadding} text-justify`}>
       <div className="py-4">
         <h1 className="font-bold">{headingText}</h1>
         <p className={`${paragraphMarginSmall} space-x-2 text-gray-500`}>
